@@ -20,7 +20,7 @@ class Shouldupdate extends Component {
     this.setState({increasing: nextProps.val > this.props.val})
   }
 
-  shouldComponentUpdate(nextProps, nextstate) {
+  shouldComponentUpdate(nextProps, nextState) {
     return (nextProps.val % 4 === 0);
   }
 
@@ -33,7 +33,7 @@ class Shouldupdate extends Component {
   }
 
   componentDidUpdate(prevProps, prevState) {
-    console.log(`prevProps: ${prevProps}.val`)
+    console.log(`prevProps: ${prevProps.val}`)
   }
 }
 Shouldupdate.defaultProps = {val: 0}
