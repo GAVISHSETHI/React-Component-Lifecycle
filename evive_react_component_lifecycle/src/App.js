@@ -8,7 +8,6 @@ class App extends Component {
   constructor() {
     super();
     this.state = {val: 0}
-    // this.update = this.update.bind(this)
   }
 
   update = () => {
