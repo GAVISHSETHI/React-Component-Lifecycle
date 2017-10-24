@@ -1,6 +1,6 @@
 React component Lifecycle Flow
 
-Steps highlighted code block
+Steps to run
 
 * clone the repository
 * cd /repository
