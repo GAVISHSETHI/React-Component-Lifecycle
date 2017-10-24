@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Wrapper from './update-no.jsx';
 import {  Sidebar, Segment, Button,Grid, Menu, Image, Icon } from 'semantic-ui-react';
-import Shouldupdate from './shouldComponenUpdate.jsx';
 
 class Home extends Component {
 state = { visible: false, render: '' };
@@ -20,7 +19,7 @@ renderHome = () => {
     case "update":
       return (<Wrapper />);
     case "shouldupdate":
-      return (<Shouldupdate />);
+      return (<a href="/should"> <Button>Should</Button></a>);
     default:
       return  (<Image src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlNE0n8qVxqUhmOSzabM771RD6nHyitZaJT1Okg5hdK15EAWm0GA' />);
 
@@ -31,12 +30,12 @@ renderHome = () => {
     const { visible } = this.state;
     return (
       <div className="home" >
-        <header as='h3' block>
+        <header as='h3' >
           <Image src='https://goevive.com/wp-content/uploads/2017/09/evive-logo_k131x34.jpg' />
         </header>
 
         <Grid>
-          <Grid.Column computer={14}>
+          <Grid.Column computer={7}>
 
             <Button onClick={this.toggleVisibility}>MENU</Button>
             <Sidebar.Pushable   as={Segment}>
