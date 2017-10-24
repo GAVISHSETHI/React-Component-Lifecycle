@@ -17,6 +17,7 @@ class Shouldupdate extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
+    console.log('Component will Receive  props');
     this.setState({increasing: nextProps.val > this.props.val})
   }
 

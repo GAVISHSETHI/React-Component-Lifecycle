@@ -7,14 +7,14 @@ import 'semantic-ui-css/semantic.min.css';
     constructor() {
       super();
       this.state = {val: 0}
-    }
+    };
     update = () => {
       this.setState({val: this.state.val + 1})
-    }
+    };
     componentWillMount(){
     console.log("component will mount");
     this.setState({m: 2})
-  }
+  };
 
   render() {
     console.log('render');
@@ -36,11 +36,11 @@ import 'semantic-ui-css/semantic.min.css';
 class Wrapper extends Component {
   mount = () => {
     ReactDOM.render(<App />, document.getElementById('a'))
-  }
+  };
 
   unmount = () => {
     ReactDOM.unmountComponentAtNode(document.getElementById('a'))
-  }
+  };
   render() {
     return (
       <div>
